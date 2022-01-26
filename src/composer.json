@@ -1,0 +1,28 @@
+{
+    "name": "tomudding/mass-social-authenticator",
+    "description": "A proof-of-concept project for Matt Zagursky (@sevadus), which provides a solution to mass authentication and linking of profiles from OAuth providers.",
+    "type": "project",
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^8.80",
+        "socialiteproviders/facebook": "^4.1",
+        "socialiteproviders/twitter": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

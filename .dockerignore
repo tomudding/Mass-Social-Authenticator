@@ -1,0 +1,12 @@
+.env.example
+.git/
+.gitattributes
+.idea/
+.mysql/
+composer.phar
+docker/Dockerfile
+docker/php/
+docker/nginx/
+docker-compose.*
+src/node_modules/
+src/vendor/

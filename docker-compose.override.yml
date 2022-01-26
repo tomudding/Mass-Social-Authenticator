@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+    myadmin:
+        image: phpmyadmin/phpmyadmin:latest
+        env_file:
+            - ./src/.env
+        depends_on:
+            - mysql
+        networks:
+            - msa-network
+        ports:
+            - "8080:80"
+        restart: unless-stopped
